@@ -1,8 +1,15 @@
-<%- include('../../partials/header.ejs') %> <%-
-include('../../partials/navbar.ejs') %>
+<%- include('../../partials/header.ejs') %>
+<%- include('../../partials/navbar.ejs') %>
 <div class="container">
   <hr />
-  <h2>Artigos</h2>
+  <div class="row">
+    <div class="col-sm-10">
+      <h2>Artigos</h2>
+    </div>
+    <div class="col-sm-2">
+      <a class="btn btn-outline-primary" href="/admin/articles/new">+ Novo Artigo</a>
+    </div>          
+  </div>
   <hr />
   <table class="table table-bordered">
     <thead>
@@ -10,7 +17,7 @@ include('../../partials/navbar.ejs') %>
         <th>Id</th>
         <th>Título</th>
         <th>Slug</th>
-        <th>Category</th>
+        <th>Categoria</th>
         <th>Ações</th>
       </tr>
     </thead>
